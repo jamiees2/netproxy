@@ -12,7 +12,7 @@ def main(external_ip=None):
     print("Downloading configuration...")
 
     # Download TSDU's config.json.
-    json_config = urllib2.urlopen("https://raw.githubusercontent.com/trick77/tunlr-style-dns-unblocking/master/config.json").read()
+    json_config = urllib2.urlopen("https://raw.githubusercontent.com/jamiees2/tunlr-style-dns-unblocking/master/config.json").read()
 
     # Remove comments.
     json_config = re.sub("//.*", "", json_config, re.MULTILINE)
