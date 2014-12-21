@@ -51,6 +51,11 @@ def main(external_ip=None):
 
     print("Done!")
 
+    print("Now run \"docker build -t jamiees2/netproxy .\"")
+
+    print("And to start the docker machine run: \"docker run -p 53:53/udp -p 80:80 -p 443:443 -d jamiees2/netproxy\"")
+    print("And to start the docker machine run: \"docker run -p 80:80 -p 443:443 -d jamiees2/netproxy\"")
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Preprocess the netproxy config.")
     parser.add_argument("-e", "--externalip", metavar="IP", type=str, help="The external IP of the server (autodetected if not specified)")
